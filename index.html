@@ -8,10 +8,22 @@
 </head>
 <body>
     <h1>Contas A Pagar</h1>
+    
+    
     <section id="pagar">
-            <p>Compras Supermercado:<select name="lista" id="lista" size="6"></select><input type="number" value="0" name="SuperMercado" id="SuperMercado"><input type="button" value="adicionar" id="add" onclick="adicionar()"></p>
-        <p id="res">Resultado...<input type="button" value="Calcular" onclick="Calcular()"></p>
+            <p>Compras Supermercado:
+                                        
+                <input type="number" name="SM" id="SM">
+                                    
+                <select name="lista" id="lista"></select>
+                
+                <input type="button" value="adicionar" onclick="adicionar()">
+            
+            <p id="res">Resultado...
+                <input type="button" value="Calcular" onclick="Calcular()"></p>
+    
     </section>
+
 </body>
 <script src="script.js"></script>
 </html>
