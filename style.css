@@ -3,3 +3,7 @@ body{
     background-color: rgb(30, 114, 30); 
     font-size: 25px;  
 }
+
+#lista{
+    width: 150px;
+}

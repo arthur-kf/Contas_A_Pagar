@@ -1,15 +1,17 @@
-function Calcular(){
-let S = document.getElementById("S")
-let P = document.getElementById("P")
-let C = document.getElementById("C")
+let SuperMercado = document.getElementById("S")
+let p1 = Number(SuperMercado.value)
+let valores = []
+let lista = document.getElementById("lista")
 
-let p1 = Number(S.value)
-let p2 = Number(P.value)
-let p3 = Number(C.value)
 
 let res = document.getElementById("res")
-let R = p1+p2+p3 
 
-    res.innerHTML = `R$${R}`
+
+
+function adicionar(){
+    valores.push(Number(SuperMercado.value))
+    let item = document.createElement("option")
+    item.text = `Valor ${SuperMercado.value} adicionado`
+    lista.appendChild(item)
 
 }
