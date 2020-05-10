@@ -1,6 +1,6 @@
 let SuperMercado = document.getElementById("SM")
 let lista = document.getElementById("lista")
-let valores = []
+let valores1 = []
 let resTotal = document.getElementById("resTotal")
 let resCadastro = document.getElementById("resCadastrado")
 
@@ -11,7 +11,7 @@ function adicionar(){
         window.alert("Digite um Número Válido")
         item.text = ""
     }else{
-        valores.push(Number(SuperMercado.value))
+        valores1.push(Number(SuperMercado.value))
         let item = document.createElement("option")
         item.text = `R$${SuperMercado.value}`
         lista.appendChild(item)
@@ -22,14 +22,14 @@ function adicionar(){
 }
 
 function Calcular(){
-    if(valores.length == 0){
+    if(valores1.length == 0){
         window.alert("Adicione valores para finalizar!")
     }else{
-        let total = valores.length
+        let total = valores1.length
         let soma = 0
 
-        for(let pos in valores){
-            soma += valores[pos]    
+        for(let pos in valores1){
+            soma += valores1[pos]    
         }
         
         resTotal.value = ""
