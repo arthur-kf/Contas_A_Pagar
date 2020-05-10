@@ -4,6 +4,7 @@ let valores1 = []
 let resTotal = document.getElementById("resTotal")
 let resCadastro = document.getElementById("resCadastrado")
 
+
 function adicionar(){
     
     
@@ -26,15 +27,15 @@ function Calcular(){
         window.alert("Adicione valores para finalizar!")
     }else{
         let total = valores1.length
-        let soma = 0
+        let soma1 = 0
 
         for(let pos in valores1){
-            soma += valores1[pos]    
+            soma1 += valores1[pos]    
         }
         
         resTotal.value = ""
         resCadastro.value = ""
-        resTotal.value += `R$${soma}`
+        resTotal.value += `R$${soma1}`
         resCadastro.value += `${total}`
     }
 }
