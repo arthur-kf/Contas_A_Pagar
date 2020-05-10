@@ -4,6 +4,16 @@ body{
     font-size: 25px;  
 }
 
-#lista{
-    width: 150px;
+#pagar{
+    text-align: left;
+}
+
+.Campo{
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+
 }
