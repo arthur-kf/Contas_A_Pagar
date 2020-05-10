@@ -2,6 +2,8 @@ let SuperMercado = document.getElementById("SM")
 let lista = document.getElementById("lista")
 let res = document.getElementById("res")
 let valores = []
+let resTotal = document.getElementById("resTotal")
+let resCadastro = document.getElementById("resCadastrado")
 
 function adicionar(){
     
@@ -15,7 +17,7 @@ function adicionar(){
         item.text = `R$${SuperMercado.value}`
         lista.appendChild(item)
         SuperMercado.value = ""
-    }
+    }  
     
 }
 
@@ -30,9 +32,10 @@ function Calcular(){
             soma += valores[pos]    
         }
         
-        res.innerHTML = ""
-        res.innerHTML += `<p>Ao todo, temos ${total} números cadastrados.</p>`
-        res.innerHTML += `<p>A soma dos valores é ${soma}.</p>`
+        resTotal.value = ""
+        resCadastro.value = ""
+        resTotal.value += `R$${soma}`
+        resCadastro.value += `${total}`
         
 
         

@@ -9,22 +9,61 @@
 <body>
     <h1>Contas A Pagar</h1>
     
-    
+<div id="Global">
     <section id="pagar">
-            <p>Compras Supermercado:
-                                        
+            
+            
+            <h1>Supermercado:</h1>
+            <p>                         
                 <input type="number" name="SM" id="SM" class="Campo"> 
                 
-                <input type="button" value="Adicionar" onclick="adicionar()" class="Campo">                     
+                <input type="button" value="Adicionar" onclick="adicionar()" class="Campo">
+
+                <select name="lista" id="lista" class="Campo"><option>Presços</option></select>
                 
-                <input type="button" value="Calcular" onclick="Calcular()" class="Campo">
+                <input type="button" value="Calcular" onclick="Calcular()" class="Campo"> 
                 
-                <select name="lista" id="lista" class="Campo"><option>Presços</option></select> 
+                <input type="text" value="Total Em R$" id="resTotal" class="Campo">
+
+                <input type="text" value="Cadastrados" id="resCadastrado" class="Campo">
+            </p>
             
-            <p id="res">resultado</p>
+            
+            <h1>Padaria:</h1>
+            <p>                         
+                <input type="number" name="PD" id="PD" class="Campo"> 
+                
+                <input type="button" value="Adicionar" onclick="adicionarP()" class="Campo">
+
+                <select name="lista" id="lista" class="Campo"><option>Presços</option></select>
+                
+                <input type="button" value="Calcular" onclick="CalcularP()" class="Campo"> 
+                
+                <input type="text" value="Total Em R$" id="resTotal" class="Campo">
+
+                <input type="text" value="Cadastrados" id="resCadastrado" class="Campo">
+            </p>
+            
+            
+            <h1>Outros:</h1>
+            <p>                         
+                <input type="number" name="SM" id="SM" class="Campo"> 
+                
+                <input type="button" value="Adicionar" onclick="adicionarO()" class="Campo">
+
+                <select name="lista" id="lista" class="Campo"><option>Presços</option></select>
+                
+                <input type="button" value="Calcular" onclick="CalcularO()" class="Campo"> 
+                
+                <input type="text" value="Total Em R$" id="resTotal" class="Campo">
+
+                <input type="text" value="Cadastrados" id="resCadastrado" class="Campo">
+            </p>
            
     </section>
-
+</div>
 </body>
 <script src="script.js"></script>
+<script src="script2.js"></script>
+<script src="script3.js"></script>
 </html>
