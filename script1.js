@@ -1,6 +1,5 @@
 let SuperMercado = document.getElementById("SM")
 let lista = document.getElementById("lista")
-let res = document.getElementById("res")
 let valores = []
 let resTotal = document.getElementById("resTotal")
 let resCadastro = document.getElementById("resCadastrado")
@@ -19,6 +18,7 @@ function adicionar(){
         SuperMercado.value = ""
     }  
     
+    
 }
 
 function Calcular(){
@@ -36,13 +36,5 @@ function Calcular(){
         resCadastro.value = ""
         resTotal.value += `R$${soma}`
         resCadastro.value += `${total}`
-        
-
-        
-        //res.innerHTML += `<p>A media entre os valores é ${media}.</p>`
-        //media = soma / total
-        //let maior = valores[0]
-        //let menor = valores[0]
-        //let media = 0
     }
 }
