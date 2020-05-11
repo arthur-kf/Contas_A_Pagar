@@ -7,8 +7,7 @@ body {
 #Global {
   background-color: rgba(255, 255, 255, 0.575);
   border-radius: 10px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin: auto /* cima e em baixo */ 30px /* direita e equerda */;
   padding-bottom: 10px;
 }
 .Campo {
