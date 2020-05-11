@@ -1,84 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contas A Pagar</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Contas A Pagar</h1>
-    
-<div id="Global">
-    <section id="pagar">
-            
-            
-            <h1>Supermercado:</h1>
-            <p>                         
-                <input type="number" name="SM" id="SM" class="Campo"> 
-                
-                <input type="button" value="Adicionar" onclick="adicionar()" class="Campo">
 
-                <select name="lista" id="lista" class="Campo"><option>Presços</option></select>
-                
-                <input type="button" value="Calcular" onclick="Calcular()" class="Campo"> 
-                
-                <input type="text" value="Total Em R$" id="resTotal" class="Campo">
+    <div id="Global">
+      <section id="pagar">
+        <h1>Supermercado:</h1>
+        <p>
+          <input type="number" name="SM" id="SM" class="Campo" />
 
-                <input type="text" value="Cadastrados" id="resCadastrado" class="Campo">
-            </p>
-            
-            
-            <h1>Padaria:</h1>
-            <p>                         
-                <input type="number" name="PD" id="PD" class="Campo"> 
-                
-                <input type="button" value="Adicionar" onclick="adicionarP()" class="Campo">
+          <input
+            type="button"
+            value="Adicionar"
+            onclick="adicionar()"
+            class="Campo"
+          />
 
-                <select name="listaP" id="listaP" class="Campo"><option>Presços</option></select>
-                
-                <input type="button" value="Calcular" onclick="CalcularP()" class="Campo"> 
-                
-                <input type="text" value="Total Em R$" id="resTotalP" class="Campo">
+          <select name="lista" id="lista" class="Campo"
+            ><option>Presços</option></select
+          >
 
-                <input type="text" value="Cadastrados" id="resCadastradoP" class="Campo">
-            </p>
-            
-            
-            <h1>Outros:</h1>
-            <p>                         
-                <input type="number" name="OU" id="OU" class="Campo"> 
-                
-                <input type="button" value="Adicionar" onclick="adicionarO()" class="Campo">
+          <input
+            type="button"
+            value="Calcular"
+            onclick="Calcular()"
+            class="Campo"
+          />
 
-                <select name="listaO" id="listaO" class="Campo"><option>Presços</option></select>
-                
-                <input type="button" value="Calcular" onclick="CalcularO()" class="Campo"> 
-                
-                <input type="text" value="Total Em R$" id="resTotalO" class="Campo">
+          <input type="text" value="Total Em R$" id="resTotal" class="Campo" />
 
-                <input type="text" value="Cadastrados" id="resCadastradoO" class="Campo">
-            </p>
-        
+          <input
+            type="text"
+            value="Cadastrados"
+            id="resCadastrado"
+            class="Campo"
+          />
+        </p>
+
+        <h1>Padaria:</h1>
+        <p>
+          <input type="number" name="PD" id="PD" class="Campo" />
+
+          <input
+            type="button"
+            value="Adicionar"
+            onclick="adicionarP()"
+            class="Campo"
+          />
+
+          <select name="listaP" id="listaP" class="Campo"
+            ><option>Presços</option></select
+          >
+
+          <input
+            type="button"
+            value="Calcular"
+            onclick="CalcularP()"
+            class="Campo"
+          />
+
+          <input type="text" value="Total Em R$" id="resTotalP" class="Campo" />
+
+          <input
+            type="text"
+            value="Cadastrados"
+            id="resCadastradoP"
+            class="Campo"
+          />
+        </p>
+
+        <h1>Outros:</h1>
+        <p>
+          <input type="number" name="OU" id="OU" class="Campo" />
+
+          <input
+            type="button"
+            value="Adicionar"
+            onclick="adicionarO()"
+            class="Campo"
+          />
+
+          <select name="listaO" id="listaO" class="Campo"
+            ><option>Presços</option></select
+          >
+
+          <input
+            type="button"
+            value="Calcular"
+            onclick="CalcularO()"
+            class="Campo"
+          />
+
+          <input type="text" value="Total Em R$" id="resTotalO" class="Campo" />
+
+          <input
+            type="text"
+            value="Cadastrados"
+            id="resCadastradoO"
+            class="Campo"
+          />
+        </p>
+
         <div>
-            Gastos Totais: <p>
-                <input type="text" value="R$..." id="GastosTotais" class="Campo">
-                <input type="button" value="Calcular" class="Campo" onclick="CalcularGastosTotais()">
-            </p>
-            Média de Gastos: <p>
-                <input type="text" value="R$..." id="MediaDeGastos" class="Campo">
-                <input type="button" value="Semana" id="semana" class="Campo" onclick="semana()">
-                <input type="button" value="Mês" id="mes" class="Campo" onclick="mes()">
-                <input type="button" value="Ano" id="ano" class="Campo" onclick="ano()">
-            </p>
+          Gastos Totais:
+          <p>
+            <input type="text" value="R$..." id="GastosTotais" class="Campo" />
+            <input
+              type="button"
+              value="Calcular"
+              class="Campo"
+              onclick="CalcularGastosTotais()"
+            />
+          </p>
+          Média de Gastos:
+          <p>
+            <input type="text" value="R$..." id="MediaDeGastos" class="Campo" />
+            <input
+              type="button"
+              value="Semana"
+              id="semana"
+              class="Campo"
+              onclick="semana()"
+            />
+            <input
+              type="button"
+              value="Mês"
+              id="mes"
+              class="Campo"
+              onclick="mes()"
+            />
+            <input
+              type="button"
+              value="Ano"
+              id="ano"
+              class="Campo"
+              onclick="ano()"
+            />
+          </p>
         </div>
-    </section>
-</div>
-    
-</body>
-<script src="script1.js"></script>
-<script src="script2.js"></script>
-<script src="script3.js"></script>
-<script src="script4.js"></script>
-<script src="script_Media_De_Gastos.js"></script>
+      </section>
+    </div>
+  </body>
+  <script src="script1.js"></script>
+  <script src="script2.js"></script>
+  <script src="script3.js"></script>
+  <script src="script4.js"></script>
+  <script src="script_Media_De_Gastos.js"></script>
 </html>
