@@ -7,7 +7,21 @@ body {
 #Global {
   background-color: rgba(255, 255, 255, 0.575);
   border-radius: 10px;
-  margin: auto /* cima e em baixo */ 30px /* direita e equerda */;
+  margin: auto 30px;
+  /*
+  !COMENTÁRIO, PODE APAGAR!
+
+  usando 1 propriedade
+  margin: [todos os lados];
+  
+  usando 2 propriedades
+  margin: [cima e baixo] [direita e esquerda]; <- usei esse
+  
+  usando 4 propriedades
+  margin: [cima] [direita] [baixo] [esquerda];
+
+  'auto' significa que a margin vai ser aplicado automaticamente
+  */
   padding-bottom: 10px;
 }
 .Campo {
