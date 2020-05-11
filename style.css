@@ -2,6 +2,11 @@ body {
   text-align: center;
   background-color: rgb(30, 114, 30);
   font-size: 25px;
+  /*
+  !COMENTÁRIO, PODE APAGAR!
+
+  n precisa adicionar 'width' e 'heigth' no body porque ele ja vai se auto compondo
+  */
   font-family: Arial, Helvetica, sans-serif; /* uma fonte mais bonitinha ne, rs :) */
 }
 
