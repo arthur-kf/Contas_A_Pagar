@@ -16,9 +16,12 @@
         akele input. e deixa o texto de descrição inselecionavel
       -->
     <h1>Contas A Pagar</h1>
-
+      
     <div id="Global">
       <section id="pagar">
+
+        <!--SUPER MERCADO-->
+
         <h1>Supermercado:</h1>
         <p>
           <input type="number" name="SM" id="SM" class="Campo" />
@@ -34,7 +37,7 @@
             ><option>Presços</option></select
           >
 
-          <input
+          <input 
             type="button"
             value="Calcular"
             onclick="Calcular()"
@@ -55,7 +58,9 @@
             class="Campo"
           />
         </p>
+        <!--SUPER MERCADO-->
 
+        <!--PADARIA-->
         <h1>Padaria:</h1>
         <p>
           <input type="number" name="PD" id="PD" class="Campo" />
@@ -92,7 +97,9 @@
             class="Campo"
           />
         </p>
+        <!--PADARIA-->
 
+        <!--OUTROS-->
         <h1>Outros:</h1>
         <p>
           <input type="number" name="OU" id="OU" class="Campo" />
@@ -129,7 +136,9 @@
             class="Campo"
           />
         </p>
+        <!--OUTROS-->
 
+        <!--GASTOS TOTAIS-->
         <div>
           Gastos Totais:
           <p>
@@ -146,6 +155,9 @@
               onclick="CalcularGastosTotais()"
             />
           </p>
+          <!--GASTOS TOTAIS-->
+
+          <!--MÉDIA DE GASTOS-->
           Média de Gastos:
           <p>
             <input
@@ -176,6 +188,9 @@
               onclick="ano()"
             />
           </p>
+          <!--MÉDIA DE GASTOS-->
+
+
         </div>
       </section>
     </div>

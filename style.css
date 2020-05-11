@@ -13,7 +13,7 @@ body {
 #Global {
   background-color: rgba(255, 255, 255, 0.575);
   border-radius: 10px;
-  margin: auto 30px;
+  margin: auto 140px;
   /*
   !COMENTÁRIO, PODE APAGAR!
 
@@ -58,7 +58,7 @@ no caso ai em baixo eu apliquei um estilo a todo input com type 'button'
 que estiver com o mouse em cima.
 */
 input[type="button"]:hover {
-  cursor: pointer;
+  cursor: help;
   /*
   !COMENTÁRIO, PODE APAGAR!
 
