@@ -39,3 +39,32 @@ body {
   text-align: center;
   border-radius: 20px;
 }
+
+/*
+!COMENTÁRIO, PODE APAGAR!
+
+editar um input com um tipo especíco
+[type="tipo"]
+
+ex:
+
+input[type="button"] {}
+input[type="text"] {}
+input[type="number"] {}
+
+:hover serve pra aplicar um estilo quando o mouse estiver em cima da tag
+
+no caso ai em baixo eu apliquei um estilo a todo input com type 'button'
+que estiver com o mouse em cima.
+*/
+input[type="button"]:hover {
+  cursor: pointer;
+  /*
+  !COMENTÁRIO, PODE APAGAR!
+
+  cursor:;
+  serve pra definir o tipo de ponteiro do mouse a ser usado: pointer, crosshair, help, etc.
+  da ate pra adicionar uma imagem ou um git com url().
+  depois tenta ai.
+  */
+}
