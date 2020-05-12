@@ -1,0 +1,49 @@
+001>
+INPUTS
+mudei o 'value' pra 'placeholder' nos input de texto
+placeholder serve exatamente pra adicionar a descrição de pra que serve
+akele input. e deixa o texto de descrição inselecionavel
+
+
+002>
+n precisa adicionar 'width' e 'heigth' no body porque ele ja vai se auto compondo
+
+
+003>
+uma fonte mais bonitinha ne, rs :)
+
+
+004>
+usando 1 propriedade
+margin: [todos os lados];
+
+usando 2 propriedades
+margin: [cima e baixo] [direita e esquerda]; <- usei esse
+
+usando 4 propriedades
+margin: [cima] [direita] [baixo] [esquerda];
+
+'auto' significa que a margin vai ser aplicado automaticamente
+
+
+005>
+editar um input com um tipo especíco
+[type="tipo"]
+
+ex:
+
+input[type="button"] {}
+input[type="text"] {}
+input[type="number"] {}
+
+:hover serve pra aplicar um estilo quando o mouse estiver em cima da tag
+
+no caso ai em baixo eu apliquei um estilo a todo input com type 'button'
+que estiver com o mouse em cima.
+
+
+006>
+cursor:;
+serve pra definir o tipo de ponteiro do mouse a ser usado: pointer, crosshair, help, etc.
+da ate pra adicionar uma imagem ou um git com url().
+depois tenta ai.

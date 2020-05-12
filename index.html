@@ -8,10 +8,14 @@
   </head>
   <body>
       
+    <!--<001>-->
+    <section class="title">
+      <h1 class="main-title">Contas A Pagar</h1>
+    </section>
+
     <div id="Global">
       <h1>Contas A Pagar</h1>
       <section id="pagar">
-
         <!--SUPER MERCADO-->
 
         <h1>Supermercado:</h1>
@@ -22,18 +26,18 @@
             type="button"
             value="Adicionar"
             onclick="adicionar()"
-            class="Campo"
+            class="Campo add"
           />
 
           <select name="lista" id="lista" class="Campo"
             ><option>Preços</option></select
           >
 
-          <input 
+          <input
             type="button"
             value="Calcular"
             onclick="Calcular()"
-            class="Campo"
+            class="Campo calc"
           />
 
           <input
@@ -61,7 +65,7 @@
             type="button"
             value="Adicionar"
             onclick="adicionarP()"
-            class="Campo"
+            class="Campo add"
           />
 
           <select name="listaP" id="listaP" class="Campo"
@@ -72,7 +76,7 @@
             type="button"
             value="Calcular"
             onclick="CalcularP()"
-            class="Campo"
+            class="Campo calc"
           />
 
           <input
@@ -100,7 +104,7 @@
             type="button"
             value="Adicionar"
             onclick="adicionarO()"
-            class="Campo"
+            class="Campo add"
           />
 
           <select name="listaO" id="listaO" class="Campo"
@@ -111,7 +115,7 @@
             type="button"
             value="Calcular"
             onclick="CalcularO()"
-            class="Campo"
+            class="Campo calc"
           />
 
           <input
@@ -143,7 +147,7 @@
             <input
               type="button"
               value="Calcular"
-              class="Campo"
+              class="Campo calc"
               onclick="CalcularGastosTotais()"
             />
           </p>
@@ -162,30 +166,37 @@
               type="button"
               value="Semana"
               id="semana"
-              class="Campo"
+              class="Campo calc"
               onclick="semana()"
             />
             <input
               type="button"
               value="Mês"
               id="mes"
-              class="Campo"
+              class="Campo calc"
               onclick="mes()"
             />
             <input
               type="button"
               value="Ano"
               id="ano"
-              class="Campo"
+              class="Campo calc"
               onclick="ano()"
             />
           </p>
           <!--MÉDIA DE GASTOS-->
-
-
         </div>
       </section>
     </div>
+
+    <footer>
+      <section class="copyrith">
+        <a
+          href="https://github.com/arthur-kf/Contas_A_Pagar/blob/master/LICENSE"
+          >Árthur Kennnnedy Farywiaz &copy;</a
+        >
+      </section>
+    </footer>
   </body>
   <script src="script_SuperMercado.js"></script>
   <script src="script_Padaria.js"></script>
