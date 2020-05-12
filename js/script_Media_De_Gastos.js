@@ -1,8 +1,8 @@
-let semana = document.getElementById("semana");
-let mes = document.getElementById("mes");
-let ano = document.getElementById("ano");
+const semana = document.getElementById("semana");
+const mes = document.getElementById("mes");
+const ano = document.getElementById("ano");
 
-let campo_media = document.getElementById("MediaDeGastos");
+const campo_media = document.getElementById("MediaDeGastos");
 
 function Semana() {
   //campo_media.value = ""
