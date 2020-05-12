@@ -52,11 +52,14 @@ function CalcularGastosTotais(){
 
         for(let pos in valores1){
             soma1 += valores1[pos]
-        for(let pos in valoresP)
-            soma2 += valoresP[pos]
-        for(let pos in valoresO)
-            soma3 += valoresO[pos]   
         }
+        for(let pos in valoresP){
+            soma2 += valoresP[pos]
+        }
+        for(let pos in valoresO){
+            soma3 += valoresO[pos]
+        }   
+        
         GastosTotais.value = ""
         GastosTotais.value = `R$${soma1 + soma2 + soma3}`
         
