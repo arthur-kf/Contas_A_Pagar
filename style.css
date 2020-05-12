@@ -75,3 +75,21 @@ input.add:hover {
   background: #03c300;
   color: #fff;
 }
+
+footer {
+  padding: 50px;
+  background: rgb(34, 34, 34);
+}
+section.copyrith {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.copyrith a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.356);
+  transition: 0.2s;
+}
+section.copyrith a:hover {
+  color: rgba(255, 255, 255, 0.671);
+}
