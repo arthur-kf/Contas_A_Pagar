@@ -25,16 +25,16 @@ function CalcularP(){
     if(valoresP.length == 0){
         window.alert("Adicione valores para finalizar!")
     }else{
-        let total = valoresP.length
+        let total2 = valoresP.length
         let soma2 = 0
 
-        for(let pos in valoresP){
-            soma2 += valoresP[pos]    
+        for(let pos2 in valoresP){
+            soma2 += valoresP[pos2]    
         }
         
         resTotalP.value = ""
         resCadastroP.value = ""
         resTotalP.value += `R$${soma2}`
-        resCadastroP.value += `${total}`
+        resCadastroP.value += `${total2}`
     }
 }

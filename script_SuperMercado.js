@@ -26,16 +26,16 @@ function Calcular(){
     if(valores1.length == 0){
         window.alert("Adicione valores para finalizar!")
     }else{
-        let total = valores1.length
+        let total1 = valores1.length
         let soma1 = 0
 
-        for(let pos in valores1){
-            soma1 += valores1[pos]    
+        for(let pos1 in valores1){
+            soma1 += valores1[pos1]    
         }
         
         resTotal.value = ""
         resCadastro.value = ""
         resTotal.value += `R$${soma1}`
-        resCadastro.value += `${total}`
+        resCadastro.value += `${total1}`
     }
 }

@@ -6,6 +6,7 @@ function CalcularGastosTotais(){
         window.alert("Adicione valores para finalizar!")
     
     }
+    
     //Se Faltar Apenas Um Espaço
     else if(valores1.length == 0){
         let soma2 = 0
@@ -51,11 +52,13 @@ function CalcularGastosTotais(){
 
         for(let pos in valores1){
             soma1 += valores1[pos]
+        for(let pos in valoresP)
             soma2 += valoresP[pos]
-            soma3 += valoresO[pos]    
+        for(let pos in valoresO)
+            soma3 += valoresO[pos]   
         }
         GastosTotais.value = ""
-        GastosTotais.value += `R$${soma1 + soma2 + soma3}`
+        GastosTotais.value = `R$${soma1 + soma2 + soma3}`
         
     }
 

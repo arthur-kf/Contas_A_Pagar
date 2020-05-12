@@ -25,16 +25,16 @@ function CalcularO(){
     if(valoresO.length == 0){
         window.alert("Adicione valores para finalizar!")
     }else{
-        let total = valoresO.length
+        let total3 = valoresO.length
         let soma3 = 0
 
-        for(let pos in valoresO){
-            soma3 += valoresO[pos]    
+        for(let pos3 in valoresO){
+            soma3 += valoresO[pos3]    
         }
         
         resTotalO.value = ""
         resCadastroO.value = ""
         resTotalO.value += `R$${soma3}`
-        resCadastroO.value += `${total}`
+        resCadastroO.value += `${total3}`
     }
 }
