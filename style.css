@@ -26,12 +26,14 @@ h1.main-title {
 }
 
 #Global {
-  background-color: rgba(255, 255, 255, 0.575);
-  border-radius: 10px;
   margin: auto;
-  max-width: 1000px;
-  /*<004>*/
+  margin-bottom: 50vh;
   padding: 10px;
+  max-width: 1000px;
+  border-radius: 10px;
+
+  background-color: rgba(15, 15, 15, 0.918);
+  color: #fff;
 }
 .Campo {
   width: 80px;
@@ -43,8 +45,33 @@ h1.main-title {
   border-radius: 20px;
 }
 
+input {
+  transition: 0.1s;
+}
 /*<005>*/
 input[type="button"]:hover {
-  cursor: help;
+  cursor: pointer;
   /*<006>*/
+}
+input[type="text"] {
+  font-size: 11px;
+}
+
+input.calc {
+  color: #cb3922;
+  border: 1px solid #cb3922;
+  background: transparent;
+}
+input.add {
+  color: #03c300;
+  border: 1px solid #03c300;
+  background: transparent;
+}
+input.calc:hover {
+  background: #cb3922;
+  color: #fff;
+}
+input.add:hover {
+  background: #03c300;
+  color: #fff;
 }
