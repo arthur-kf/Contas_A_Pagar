@@ -2,32 +2,15 @@ body {
   text-align: center;
   background-color: rgb(30, 114, 30);
   font-size: 25px;
-  /*
-  !COMENTÁRIO, PODE APAGAR!
-
-  n precisa adicionar 'width' e 'heigth' no body porque ele ja vai se auto compondo
-  */
-  font-family: Arial, Helvetica, sans-serif; /* uma fonte mais bonitinha ne, rs :) */
+  /*<002>*/
+  font-family: Arial, Helvetica, sans-serif; /* <003> */
 }
 
 #Global {
   background-color: rgba(255, 255, 255, 0.575);
   border-radius: 10px;
   margin: auto 140px;
-  /*
-  !COMENTÁRIO, PODE APAGAR!
-
-  usando 1 propriedade
-  margin: [todos os lados];
-  
-  usando 2 propriedades
-  margin: [cima e baixo] [direita e esquerda]; <- usei esse
-  
-  usando 4 propriedades
-  margin: [cima] [direita] [baixo] [esquerda];
-
-  'auto' significa que a margin vai ser aplicado automaticamente
-  */
+  /*<004>*/
   padding-bottom: 10px;
 }
 .Campo {
@@ -40,31 +23,8 @@ body {
   border-radius: 20px;
 }
 
-/*
-!COMENTÁRIO, PODE APAGAR!
-
-editar um input com um tipo especíco
-[type="tipo"]
-
-ex:
-
-input[type="button"] {}
-input[type="text"] {}
-input[type="number"] {}
-
-:hover serve pra aplicar um estilo quando o mouse estiver em cima da tag
-
-no caso ai em baixo eu apliquei um estilo a todo input com type 'button'
-que estiver com o mouse em cima.
-*/
+/*<005>*/
 input[type="button"]:hover {
   cursor: help;
-  /*
-  !COMENTÁRIO, PODE APAGAR!
-
-  cursor:;
-  serve pra definir o tipo de ponteiro do mouse a ser usado: pointer, crosshair, help, etc.
-  da ate pra adicionar uma imagem ou um git com url().
-  depois tenta ai.
-  */
+  /*<006>*/
 }
