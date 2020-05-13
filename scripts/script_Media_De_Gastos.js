@@ -1,36 +1,41 @@
-let semana = document.getElementById("semana")
-let mes = document.getElementById("mes")
-let ano = document.getElementById("ano")
+let Semana = document.getElementById("semana")
+let Mes = document.getElementById("mes")
+let Ano = document.getElementById("ano")
 
 let campo_media = document.getElementById("MediaDeGastos")
+let resMedia = document.getElementById("mediares")
 
-
-function Semana(){
+function semana(){
+   //campo_media.value = ""    
     
-    //campo_media.value = ""    
-    campo_media.value = media
-
+        let somas = [soma1 = 0 , soma2 = 0 , soma3 = 0]
+        let totais = [valores1 = 0 , valoresP = 0 , valoresO = 0 ]
+        
+        /*
         let soma1 = 0
         let soma2 = 0
         let soma3 = 0
         let total = valores1.length
         let total2 = valoresP.length
         let total3 = valoresO.length
+        let media = 0
+        */
+       
+        let media = 0
 
-        for(let pos in valores1){
-            soma1 += valores1[pos]
-            soma2 += valoresP[pos]
-            soma3 += valoresO[pos]    
+        for(let pos in totais){
+            somas += totais[pos]
         }
-        media = soma1 / total + soma2 / total2 + soma3 / total3
-    
+
+        media += somas.length / totais.length
+        //media = soma1 / total + soma2 / total2 + soma3 / total3
+        resMedia.innerHTML = media
     
 }
-
-function Mes(){
+function mes(){
     campo_media.value = ""
 }
 
-function Ano(){
+function ano(){
     campo_media.value = ""
 }
