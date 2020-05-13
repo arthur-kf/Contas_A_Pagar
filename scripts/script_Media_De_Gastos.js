@@ -24,7 +24,7 @@ function semana(){
         let totais = [valores1.length + valoresP.length + valoresO.length]
         let media = somas / totais
 
-        campo_media.value = media
+        campo_media.value = "R$" + media
 
     }
 }
